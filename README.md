@@ -2,7 +2,7 @@
 Here are some scripts that I hacked after a LOOOOONG time of thinking and debugging :-)
 
 
-**Finding GC Content in a sequence and doisplaying degenerate bases and their positions if the sequence is not DNA (Python)**
+**Finding GC Content in a sequence and displaying degenerate bases and their positions if the sequence is not DNA (Python)**
 
 def percentageGC(sequence):
 
