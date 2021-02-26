@@ -16,3 +16,43 @@ def percentageGC(sequence):
             if base not in true_DNA:
               print("There is an invalid base %s at position %d" % (base,sequence.find(base)))
         return GC_Count
+        
+ **Finding the longest repeats in DNA Sequence**       
+
+
+ import re
+
+with open ("../Data/sequence.txt") as DNA:
+     bases = DNA.read()
+m = re.search(r"(A+A)",bases)
+if m:
+    print("Here is the repeat!")
+    repeat1 = m.group()
+    print("The repeat is" + repeat1)
+    print("The length of the repeat is %d" % len(repeat1))
+    
+    
+m = re.search(r"(G+G)",bases)
+if m:
+    print("Here is the repeat!")
+    repeat2 = m.group()
+    print("The repeat is" + repeat2)
+    print("The length of the repeat is %d" % len(repeat2))
+    
+    
+m = re.search(r"(C+C)",bases)
+if m:
+    print("Here is the repeat!")
+    repeat3 = m.group()
+    print("The repeat is" + repeat3)
+    print("The length of the repeat is %d" % len(repeat3))
+    
+
+m = re.search(r"(T+T)",bases)
+if m:
+    print("Here is the repeat!")
+    repeat4 = m.group()
+    print("The repeat is" + repeat4)
+    print("The length of the repeat is %d" % len(repeat4))
+    
+    
