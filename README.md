@@ -23,7 +23,9 @@ def percentageGC(sequence):
  import re
 
 with open ("../Data/sequence.txt") as DNA:
+
      bases = DNA.read()
+     
 m = re.search(r"(A+A)",bases)
 if m:
     print("Here is the repeat!")
